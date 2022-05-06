@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int arr[6]={1,2,3,4,5,6};
-void relocate_print(int in, int array[6], int nu){
+void inserting(int in, int array[6], int nu){
 	for(int u=6; u>in;u=u-1){
 	 array[u]=array[u-1];
 	 }
@@ -17,7 +17,7 @@ int main(){
 	cin>>num;
 	cout<<"Enter index:";
 	cin>>index;	
-    relocate_print(index,arr,num);
+    inserting(index,arr,num);
 	return 0;
 
 }
